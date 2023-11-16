@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/527962c75f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo"
+                    class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Saikumar</span><br> From Telangana</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a recent B.Tech graduate in Electronics and
+                        Communication Engineering with a strong foundation
+                        in Python, JavaScript, SQL, HTML, CSS, and Node.js,
+                        I'm eager to kickstart my career in full-stack development.
+                        During my 4-month internship, I had the opportunity to work
+                        on real-world projects, developing applications and gaining
+                        practical experience in web development. With a knack for
+                        problem-solving and excellent communication skills, I'm committed
+                        to contributing to dynamic teams and embracing challenges.
+                        I'm seeking a role where I can further develop my technical
+                        skills and make a meaningful impact.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <span style="display: flex; flex-wrap: wrap; gap: 8px;"">
+                                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+                                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+                                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+                                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+                                <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+                                <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white" alt="SQL" />
+                                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+                                <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+                                <img src="https://img.shields.io/badge/Frappe/ERPNext-3DDC84?style=for-the-badge&logo=frappe&logoColor=white" alt="Frappe/ERPNext" />
+                                <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+                                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+                                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB" />
+                                <img src="https://img.shields.io/badge/REST%20APIs-ff6699?style=for-the-badge&logo=rest&logoColor=white" alt="REST APIs" />
+                                <img src="https://img.shields.io/badge/Object%20Oriented%20Programming%20in%20Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Object Oriented Programming in Python" />
+                            </span>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li>
+                                <span>Jun 5 - Oct 30</span><br>
+                                <strong>Company Name:</strong> Korecent Solutions<br>
+                                <strong>Position:</strong> Full Stack Developer Intern<br>
+                                <strong>Description:</strong> As a Full-Stack Developer Intern, I actively contributed to the customization and development of Frappe
+                                ERPNext, utilizing a diverse skill set including Python, JavaScript, HTML, CSS, and Jinja. My key
+                                responsibilities included:
+                                Customizing and extending the Frappe ERPNext platform to meet specific client requirements.
+                                Designing and implementing user interfaces using HTML, CSS, and JavaScript Gained hands-on experience with front-end and back-end technologies.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2018 - 2022</span><br>
+                                <strong>B-Tech</strong><br>
+                                College Name: Trinity College of Engineering and Technology<br>
+                                Branch: Electronics and Communication Engineering(ECE)
+                            </li>
+                            <li>
+                                <span>2016 - 2018</span><br>
+                                <strong>Intermediate</strong><br>
+                                College Name: Sadhana Junior College<br>
+                                Branch: MPC
+                            </li>
+                            <li>
+                                <span>2015 - 2016</span><br>
+                                <strong>SSC</strong><br>
+                                School Name: Secondary School Of Certificate
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------services------------->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<section>
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title-services">My <span>Services</span></h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" alt="">
+                    <h2>Static Website</h2>
+                    <p>A static website contains web pages with fixed content. Each page is developed using HTML and CSS and displays the same information to every visitor.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+
+                <div class="service-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" alt="">
+                    <h2>Responsive Web Design</h2>
+                    <p>Responsive Web design is the approach that suggests that design and development should respond to the user's behaviour and environment based on screen size, platform and orientation.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+
+                <div class="service-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" alt="">
+                    <h2>Customisable Layouts</h2>
+                    <p>Customisable Sites are templates with set layouts. You may be able to change photos and colors, but your site will look similar to many other sites due to the template. The same goes for...</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+
+                <div class="service-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" alt="">
+                    <h2>Dynamic Web Development</h2>
+                    <p>Dynamic websites use server-side programming and databases to provide a personalized experience. JavaScript is often used to enhance interactivity and user engagement.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- -------portfolio-------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/wikipedia_PNG37.png">
+                    <div class="layer">
+                        <h3>Wikipedia Search Application</h3>
+                        <p>Experience a new level of information access with a custom wikipedia search application that simplifies the
+                            search process. With a user-friendly interface and relevant results, users can expand their knowledge in no time</p>
+                        <a href="https://dsaiwikipedia.ccbp.tech"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Application-Logo-Vector-Transparent-PNG.png">
+                    <div class="layer">
+                        <h3>Todos Application</h3>
+                        <p>A comprehensive todo management tool designed to enhance productivity</p>
+                        <a href="https://dsaitodos.ccbp.tech"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/food-munch-img.png">
+                    <div class="layer">
+                        <h3>Food Munch</h3>
+                        <p>A fully responsive website that offers a comprehensive list of food items and detailed information about each
+                            item</p>
+                        <a href="https://foodmuchap.ccbp.tech"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- ---------contact--------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> saikumar.dumpeti1919@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9701622534</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saikumardumpeti/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/saikumardumpeti"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sai_dumpeti_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/myresume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Saikumar <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfU6EcqhVhJjXep-EiRAv8fnLaJJ1meLWDnaN25ClORKVAuZuxOetBE0Pb-l5iuY-m/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById('msg');
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
